@@ -1,0 +1,42 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.manu-bg {
+  background: linear-gradient(to right, #233942 50%, #0d0f11 50%);
+  backdrop-filter: blur(15px);
+}
+.container-manu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+}
+.manu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+}
+/* section-1 */
+.container-section-one {
+  background: linear-gradient(to right, #233942 50%, #0d0f11 50%);
+
+  background: url(/images/noah-PhotoRoom1x.jpg),
+    lightgray -171.627px 0px / 138.678% 100% no-repeat;
+  box-shadow: 7px 8px 27px 0px rgba(0, 0, 0, 0.1);
+}
