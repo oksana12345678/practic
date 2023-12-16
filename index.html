@@ -10,19 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Lato:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css" />
     <title>Document</title>
   </head>
   <body>
     <header class="manu-bg">
-      <div class="container-manu">
-        <nav>
-          <a class="logo" href="">grapher shot.</a>
+      <div class="container-manu container">
+        <nav class="manu-nav">
+          <a class="logo" href=""
+            ><svg>
+              <use href="./images/icon.svg#icon-Logo"></use></svg
+          ></a>
           <ul class="manu-list">
-            <li class="manu-list-item"><a href="">portofolio</a></li>
-            <li class="manu-list-item"><a href="">about me</a></li>
-            <li class="manu-list-item"><a href="">portfolio</a></li>
-            <li class="manu-list-item"><a href="">price</a></li>
-            <li class="manu-list-item"><a href="">contact</a></li>
+            <li class="manu-list-item"><a class="manu-link port-color" href="">portofolio</a></li>
+            <li class="manu-list-item"><a class="manu-link" href="">about me</a></li>
+            <li class="manu-list-item"><a class="manu-link" href="">portfolio</a></li>
+            <li class="manu-list-item"><a class="manu-link" href="">price</a></li>
+            <li class="manu-list-item"><a class="manu-link" href="">contact</a></li>
           </ul>
         </nav>
       </div>
@@ -30,297 +34,410 @@
     <main>
       <!-- section-1 -->
       <section class="section-one section">
-        <div class="container-section-one">
-          <h1 class="title-one">photo graphy</h1>
+        <div class="container-section-one container">
+          <h1 class="title-one">photo <span class="graphy-style">graphy</span></h1>
+          <div class="position-btn">
+            <svg class="icon-btn" width="238" height="66">
+              <use href="./images/icon.svg#icon-Vector-3"></use>
+            </svg>
+            <button class="section-one-btn" type="button">order now</button>
+          </div>
           <p class="disc-one">Pellentesque mauris a lobortis in bibendum sed lobortis semper. Eget eu vel eu vitae.</p>
-          <button class="section-one-btn" type="button">order now</button>
-          <ul>
+
+          <ul class="list-social">
             <li>
-              <svg>
-                <use></use>
+              <svg class="icon-social" width="28" height="24">
+                <use href="./images/icon.svg#icon-twiter"></use>
               </svg>
             </li>
             <li>
-              <svg>
-                <use></use>
+              <svg class="icon-social" width="26" height="28">
+                <use href="./images/icon.svg#icon-google"></use>
               </svg>
             </li>
             <li>
-              <svg>
-                <use></use>
+              <svg class="icon-social" width="14" height="28">
+                <use href="./images/icon.svg#icon-facebook"></use>
               </svg>
             </li>
             <li>
-              <svg>
-                <use></use>
+              <svg class="icon-social" width="26" height="28">
+                <use href="./images/icon.svg#icon-in"></use>
               </svg>
             </li>
           </ul>
         </div>
       </section>
       <!-- section-2 -->
-      <section>
-        <h2 class="title-two">about us</h2>
-        <p class="disc-two">
-          Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices arcu
-          ut sed. Ultricies diam est aliquet porta fermentum molestie morbi libero. Ultrices sit in elit eget nullam
-          sem. Urna velit imperdiet habitant in.
-        </p>
-        <ul class="list-two">
-          <li class="list-two-item">
-            <h3 class="title-three">+10 years</h3>
-            <p class="disc-three">experience</p>
-          </li>
-          <li class="list-two-item">
-            <h3 class="title-three">+450</h3>
-            <p class="disc-three">customers</p>
-          </li>
-          <li class="list-two-item">
-            <h3 class="title-three">+15K</h3>
-            <p class="disc-three">portfolio photos</p>
-          </li>
-        </ul>
+      <section class="section about-us">
+        <div class="container-about-us">
+          <div class="container-title-arrow">
+            <h2 class="title-two about">about us</h2>
+            <svg class="icon-arrow">
+              <use class="icon-arrow" href="./images/icon.svg#icon-arrow-2"></use>
+            </svg>
+          </div>
+          <p class="disc-two">
+            Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices
+            arcu ut sed. Ultricies diam est aliquet porta fermentum molestie morbi libero. Ultrices sit in elit eget
+            nullam sem. Urna velit imperdiet habitant in.
+          </p>
+          <ul class="list-two">
+            <li class="list-two-item">
+              <div class="container-disc">
+                <h3 class="title-three">+10 years</h3>
+                <p class="disc-three">experience</p>
+              </div>
+            </li>
+            <li class="list-two-item">
+              <div class="container-disc">
+                <h3 class="title-three">+450</h3>
+                <p class="disc-three">customers</p>
+              </div>
+            </li>
+            <li class="list-two-item">
+              <div class="container-disc">
+                <h3 class="title-three">+15K</h3>
+                <p class="disc-three">portfolio photos</p>
+              </div>
+            </li>
+          </ul>
+          <div class="container-scroll">
+            <ul class="list-photo">
+              <li class="list-photo-item">
+                <img
+                  srcset="./images/gallery-one/weddingx2.jpg 2x"
+                  src="./images/gallery-one/wedding.jpg"
+                  alt="wedding"
+                />
+              </li>
+              <li class="list-photo-item">
+                <img srcset="./images/gallery-one/eye2x.jpg 2x" src="./images/gallery-one/eye.jpg" alt="face" />
+              </li>
+              <li class="list-photo-item">
+                <img
+                  srcset="./images/gallery-one/babyAndMam2x.jpg 2x"
+                  src="./images/gallery-one/babyAndMam.jpg"
+                  alt="baby and mam"
+                />
+              </li>
+              <li class="list-photo-item">
+                <img srcset="./images/gallery-one/girl2x.jpg 2x" src="./images/gallery-one/girl.jpg" alt="girl" />
+              </li>
+              <li class="list-photo-item">
+                <img
+                  srcset="./images/gallery-one/kiss2x.jpg 2x"
+                  src="./images/gallery-one/kiss.jpg"
+                  alt="wedding kiss"
+                />
+              </li>
+            </ul>
+
+            <svg width="68" height="22">
+              <use href="./images/icon.svg#icon-arrow-1"></use>
+            </svg>
+          </div>
+        </div>
       </section>
       <!-- section-3 -->
-      <section>
-        <div class="">
-          <ul>
-            <li>
-              <img
-                srcset="./images/gallery-one/wedding2x.jpg 2x"
-                src="./images/gallery-one/wedding.jpg"
-                alt="wedding"
-              />
+      <section class="section-port">
+        <div class="container-port">
+          <div class="padd-container">
+            <h2 class="title-two">portfolio</h2>
+            <ul class="list-select">
+              <li class="list-items-select"><a href="" class="link-select color-all">all</a></li>
+              <li class="list-items-select"><a href="" class="link-select">wedding</a></li>
+              <li class="list-items-select"><a href="" class="link-select">product</a></li>
+              <li class="list-items-select"><a href="" class="link-select">food</a></li>
+              <li class="list-items-select"><a href="" class="link-select">fashion</a></li>
+            </ul>
+          </div>
+          <ul class="list-gallery">
+            <div class="img-group">
+              <div class="group-one">
+                <li class="list-gallery-items">
+                  <img src="./images/girlInhead.jpg" alt=" girl in head" srcset="./images/girlInhead2x.jpg 2x" />
+                </li>
+                <div class="img-group">
+                  <li class="list-gallery-items">
+                    <img src="./images/foodEgg.jpg" alt="foog egg" srcset="./images/foodEgg2x.jpg 2x" />
+                  </li>
+                  <li class="list-gallery-items">
+                    <img src="./images/food.jpg" alt="food" srcset="./images/food2x.jpg 2x" />
+                  </li>
+                </div>
+              </div>
+              <li class="list-gallery-items">
+                <img src="./images/bicycle.jpg" alt="bicycle" srcset="./images/bicycle2x.jpg 2x" />
+              </li>
+            </div>
+
+            <li class="list-gallery-items">
+              <img src="./images/wedding.jpg" alt="wedding" srcset="./images/wedding2x.jpg 2x" />
             </li>
-            <li><img srcset="./images/gallery-one/eye2x.jpg 2x" src="./images/gallery-one/eye.jpg" alt="face" /></li>
-            <li>
-              <img
-                srcset="./images/gallery-one/babyAndMam2x.jpg 2x"
-                src="./images/gallery-one/babyAndMam.jpg"
-                alt="baby and mam"
-              />
-            </li>
-            <li><img srcset="./images/gallery-one/girl2x.jpg 2x" src="./images/gallery-one/girl.jpg" alt="girl" /></li>
-            <li>
-              <img srcset="./images/gallery-one/kiss2x.jpg 2x" src="./images/gallery-one/kiss.jpg" alt="wedding kiss" />
-            </li>
+            <div class="img-group">
+              <li class="list-gallery-items">
+                <img src="./images/newYear.jpg" alt=" new year" srcset="./images/newYear2x.jpg 2x" />
+              </li>
+              <li class="list-gallery-items">
+                <img src="./images/retro.jpg" alt="girl" srcset="./images/retro2x.jpg 2x" />
+              </li>
+            </div>
+            <div class="img-group">
+              <li class="list-gallery-items">
+                <img src="./images/tree.jpg" alt="tree" srcset="./images/tree2x.jpg 2x" />
+              </li>
+              <li class="list-gallery-items">
+                <img src="./images/girlThree.jpg" alt="girl" srcset="./images/girlThree2x.jpg 2x" />
+              </li>
+            </div>
+            <div class="img-group">
+              <li class="list-gallery-items">
+                <img src="./images/halfOne.jpg" alt="half" srcset="./images/halfOne2x.jpg 2x" />
+              </li>
+              <li class="list-gallery-items">
+                <img src="./images/halfTwo.jpg" alt="half two" srcset="./images/halfTwo2x.jpg 2x" />
+              </li>
+            </div>
           </ul>
         </div>
       </section>
       <!-- section-4 -->
       <section>
-        <h2></h2>
-        <ul>
-          <li><a href="">all</a></li>
-          <li><a href="">wedding</a></li>
-          <li><a href="">product</a></li>
-          <li><a href="">food</a></li>
-          <li><a href="">fashion</a></li>
-        </ul>
-        <ul>
-          <li><img src="./images/girlInhead.jpg" alt=" girl in head" srcset="./images/girlInhead2x.jpg 2x" /></li>
-          <li><img src="./images/foodEgg.jpg" alt="foog egg" srcset="./images/foodEgg2x.jpg 2x" /></li>
-          <li><img src="./images/wedding.jpg" alt="wedding" srcset="./images/wedding2x.jpg 2x" /></li>
-          <li><img src="./images/newYear.jpg" alt=" new year" srcset="./images/newYear2x.jpg 2x" /></li>
-          <li><img src="./images/tree.jpg" alt="tree" srcset="./images/tree2x.jpg 2x" /></li>
-          <li><img src="./images/halfOne.jpg" alt="half" srcset="./images/halfOne2x.jpg 2x" /></li>
-          <li><img src="./images/bicycle.jpg" alt="bicycle" srcset="./images/bicycle2x.jpg 2x" /></li>
-          <li><img src="./images/food.jpg" alt="food" srcset="./images/food2x.jpg 2x" /></li>
-          <li><img src="./images/retro.jpg" alt="girl" srcset="./images/retro2x.jpg 2x" /></li>
-          <li><img src="./images/girlThree.jpg" alt="girl" srcset="./images/girlThree2x.jpg 2x" /></li>
-          <li><img src="./images/halfTwo.jpg" alt="half two" srcset="./images/halfTwo2x.jpg 2x" /></li>
-        </ul>
+        <div class="container">
+          <h2>why me</h2>
+          <p>
+            Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices
+            arcu ut sed.
+          </p>
+          <ul>
+            <li>
+              <svg>
+                <use></use>
+              </svg>
+              <h3>agency</h3>
+              <p>
+                Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
+                phasellus et.
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use></use>
+              </svg>
+              <h3>choose idea</h3>
+              <p>
+                Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
+                phasellus et.
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use></use>
+              </svg>
+              <h3>satisfaction</h3>
+              <p>
+                Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
+                phasellus et.
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use></use>
+              </svg>
+              <h3>quality</h3>
+              <p>
+                Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
+                phasellus et.
+              </p>
+            </li>
+            <li>
+              <svg>
+                <use></use>
+              </svg>
+              <h3>creativity</h3>
+              <p>
+                Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
+                phasellus et.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section-5 -->
       <section>
-        <h2>why me</h2>
-        <p>
-          Tincidunt sagittis mollis nec suspendisse sed felis massa urna nec. Urna quisque blandit turpis ultrices arcu
-          ut sed.
-        </p>
-        <ul>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>agency</h3>
-            <p>
-              Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
-              phasellus et.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>choose idea</h3>
-            <p>
-              Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
-              phasellus et.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>satisfaction</h3>
-            <p>
-              Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
-              phasellus et.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>quality</h3>
-            <p>
-              Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
-              phasellus et.
-            </p>
-          </li>
-          <li>
-            <svg>
-              <use></use>
-            </svg>
-            <h3>creativity</h3>
-            <p>
-              Sagittis enim nullam pulvinar tellus sit egestas semper. Vestibulum sed libero sed at sed nisl sodales
-              phasellus et.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2>testimonials</h2>
+          <ul>
+            <li>
+              <div class="container-photo">
+                <img src="./images/jhonMaftuh.jpg" srcset="./images/jhonMaftuh2x.jpg 2x" alt="jhon Maftuh" />
+              </div>
+              <div class="container-name">
+                <h3>jhon maftuh</h3>
+                <p>Facebook</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
+                sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi
+                diam.
+              </p>
+            </li>
+            <li>
+              <div class="container-photo">
+                <img src="./images/verdaAngel.jpg" srcset="./images/verdaAngel2x.jpg 2x" alt="Verda Angel" />
+              </div>
+              <div class="container-name">
+                <h3>verda angel</h3>
+                <p>instagram</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
+                sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi
+                diam.
+              </p>
+            </li>
+            <li>
+              <div class="container-photo">
+                <img
+                  src="./images/loviaFranciska.jpg"
+                  srcset="./images/loviaFranciska2x.jpg 2x"
+                  alt="Lovia Franciska"
+                />
+              </div>
+              <div class="container-name">
+                <h3>lovia franciska</h3>
+                <p>google</p>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
+                sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi
+                diam.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section-6 -->
       <section>
-        <h2>testimonials</h2>
-        <ul>
-          <li>
-            <div class="container-photo">
-              <img src="./images/jhonMaftuh.jpg" srcset="./images/jhonMaftuh2x.jpg 2x" alt="jhon Maftuh" />
-            </div>
-            <div class="container-name">
-              <h3>jhon maftuh</h3>
-              <p>Facebook</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
-              sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam.
-            </p>
-          </li>
-          <li>
-            <div class="container-photo">
-              <img src="./images/verdaAngel.jpg" srcset="./images/verdaAngel2x.jpg 2x" alt="Verda Angel" />
-            </div>
-            <div class="container-name">
-              <h3>verda angel</h3>
-              <p>instagram</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
-              sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam.
-            </p>
-          </li>
-          <li>
-            <div class="container-photo">
-              <img src="./images/loviaFranciska.jpg" srcset="./images/loviaFranciska2x.jpg 2x" alt="Lovia Franciska" />
-            </div>
-            <div class="container-name">
-              <h3>lovia franciska</h3>
-              <p>google</p>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Pellentesque eget id quis arcu sem ac nulla interdum. Turpis
-              sagittis blandit pharetra mauris quis nulla ornare amet. Enim placerat eu mauris aliquet viverra mi diam.
-            </p>
-          </li>
-        </ul>
+        <div class="container">
+          <h2>pricelist</h2>
+          <ul>
+            <li>
+              <h3>standard</h3>
+              <p>400$</p>
+              <ul>
+                <li>
+                  <div class="price-list-title"><p>duration</p></div>
+                  <div class="disc-prise"><p>3 hours</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>lots of photos</p></div>
+                  <div class="disc-prise"><p>60 - 80</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>detailed retouching</p></div>
+                  <div class="disc-prise"><p>25 items</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>finishing</p></div>
+                  <div class="disc-prise"><p>10 days</p></div>
+                </li>
+              </ul>
+              <button class="price-btn">photo session schedule</button>
+            </li>
+            <li>
+              <h3>premium</h3>
+              <p>550$</p>
+              <ul>
+                <li>
+                  <div class="price-list-title"><p>duration</p></div>
+                  <div class="disc-prise"><p>4 hours</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>lots of photos</p></div>
+                  <div class="disc-prise"><p>85 - 90</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>detailed retouching</p></div>
+                  <div class="disc-prise"><p>detailed retouching</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>finishing</p></div>
+                  <div class="disc-prise"><p>7 days</p></div>
+                </li>
+              </ul>
+              <button class="price-btn">photo session schedule</button>
+            </li>
+            <li>
+              <h3>pro</h3>
+              <p>600$</p>
+              <ul>
+                <li>
+                  <div class="price-list-title"><p>duration</p></div>
+                  <div class="disc-prise"><p>6 hours</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>lots of photos</p></div>
+                  <div class="disc-prise"><p>unlimited</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>detailed retouching</p></div>
+                  <div class="disc-prise"><p>unlimited</p></div>
+                </li>
+                <li>
+                  <div class="price-list-title"><p>unlimited</p></div>
+                  <div class="disc-prise"><p>3 days</p></div>
+                </li>
+              </ul>
+              <button class="price-btn">photo session schedule</button>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- section-7 -->
       <section>
-        <h2>pricelist</h2>
-        <ul>
-          <li>
-            <h3>standard</h3>
-            <p>400$</p>
-            <ul>
-              <li>
-                <div class="price-list-title"><p>duration</p></div>
-                <div class="disc-prise"><p>3 hours</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>lots of photos</p></div>
-                <div class="disc-prise"><p>60 - 80</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>detailed retouching</p></div>
-                <div class="disc-prise"><p>25 items</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>finishing</p></div>
-                <div class="disc-prise"><p>10 days</p></div>
-              </li>
-            </ul>
-            <button class="price-btn">photo session schedule</button>
-          </li>
-          <li>
-            <h3>premium</h3>
-            <p>550$</p>
-            <ul>
-              <li>
-                <div class="price-list-title"><p>duration</p></div>
-                <div class="disc-prise"><p>4 hours</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>lots of photos</p></div>
-                <div class="disc-prise"><p>85 - 90</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>detailed retouching</p></div>
-                <div class="disc-prise"><p>detailed retouching</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>finishing</p></div>
-                <div class="disc-prise"><p>7 days</p></div>
-              </li>
-            </ul>
-            <button class="price-btn">photo session schedule</button>
-          </li>
-          <li>
-            <h3>pro</h3>
-            <p>600$</p>
-            <ul>
-              <li>
-                <div class="price-list-title"><p>duration</p></div>
-                <div class="disc-prise"><p>6 hours</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>lots of photos</p></div>
-                <div class="disc-prise"><p>unlimited</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>detailed retouching</p></div>
-                <div class="disc-prise"><p>unlimited</p></div>
-              </li>
-              <li>
-                <div class="price-list-title"><p>unlimited</p></div>
-                <div class="disc-prise"><p>3 days</p></div>
-              </li>
-            </ul>
-            <button class="price-btn">photo session schedule</button>
-          </li>
-        </ul>
-      </section>
-      <!-- section-8 -->
-      <section>
-        <h2></h2>
-        <form>
-          <input type="email" name="" id="" placeholder="Enter Your Email Address" />
-          <button class="btn-submit">Submit</button>
-        </form>
+        <div class="container">
+          <h2>Get more info other discount prices</h2>
+          <form>
+            <input type="email" name="" id="" placeholder="Enter Your Email Address" />
+            <button class="btn-submit">Submit</button>
+            <label for="check-submit"
+              ><input type="checkbox" name="check-submit" id="check-submit" />* By clicking &quot;Submit&quot; button,
+              you agree to our Terms and that you have read our Data Use Policy.</label
+            >
+          </form>
+        </div>
       </section>
       <footer>
-        
+        <div class="footer-container">
+          <a class="logo-footer" href=""></a>
+          <ul class="list-social">
+            <li class="logo-footer-item">
+              <svg class="social-logo">
+                <use></use>
+              </svg>
+            </li>
+            <li class="logo-footer-item">
+              <svg class="social-logo">
+                <use></use>
+              </svg>
+            </li>
+            <li class="logo-footer-item">
+              <svg class="social-logo">
+                <use></use>
+              </svg>
+            </li>
+            <li class="logo-footer-item">
+              <a class="logo" href=""
+                ><svg class="social-logo">
+                  <use href="./images/icon.svg#icon-Logo"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p>(C) Copyright 2022 I Photographer</p>
+        </div>
       </footer>
     </main>
   </body>
